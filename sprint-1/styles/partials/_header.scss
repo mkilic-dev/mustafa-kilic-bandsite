@@ -1,0 +1,82 @@
+html, body {
+  margin: 0;
+  font-family: "AvenirRegular", sans-serif;
+  line-height: 1.8rem;
+  height: 100vh;
+  box-sizing: border-box;
+
+}
+
+.header {
+  display: flex;
+  height: 80px;
+  background-color: black;
+  width: 100%;
+  justify-content: center;
+  &__logo {
+    font-size: 28px;
+    color: white;
+    padding-top: 15px;
+    position: fixed;
+    
+  }
+  &__container {
+    display: flex;
+    color: white;
+    padding-top: 35px;
+    margin-right: 10px;
+    position: relative;
+  }
+  &__menu-item {
+    list-style: none;
+    margin-right: 50px;    
+}
+
+  &__menu-item-link {
+    text-decoration: none;
+    color: white;
+    
+}
+}
+
+@include medium {
+  .header {
+    display: flex;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    &__logo {
+      font-size: 28px;
+      color: white;
+      padding-right: 550px;
+      padding-top: 25px;
+   }
+    &__container {
+      color: white;
+      padding-top: 10px;
+
+    }
+  }
+}
+
+@include large {
+  .header {
+    display: flex;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+    &__logo {
+      font-size: 28px;
+      color: white;
+      padding-right: 550px;
+      padding-top: 25px;
+      
+    }
+    &__container {
+      display: flex;
+      color: white;
+      padding-top: 10px;
+      
+    }
+  }
+}

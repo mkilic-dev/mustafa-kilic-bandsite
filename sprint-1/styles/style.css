@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'AvenirRegular';
+  src: url("../assets/fonts/AvenirRegular.otf");
+}
+
+@font-face {
+  font-family: 'AvenirBold';
+  src: url("../assets/fonts/AvenirBold.otf");
+}
+
+@font-face {
+  font-family: 'AvenirSemiBold';
+  src: url("../assets/fonts/Linotype - AvenirNextLTPro-Bold.otf");
+}
+
 html, body {
   margin: 0;
   font-family: "AvenirRegular", sans-serif;
@@ -14,33 +29,31 @@ html, body {
   height: 80px;
   background-color: black;
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.header__logo {
   font-size: 28px;
   color: white;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  margin-left: 180px;
+  padding-top: 15px;
+  position: fixed;
 }
 
-.container {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   color: white;
-  font-size: 20px;
-  height: 20px;
-  margin-left: 56px;
+  padding-top: 35px;
+  margin-right: 10px;
+  position: relative;
 }
 
 .header__menu-item {
   list-style: none;
-  padding-top: 5px;
-  margin-right: 56px;
+  margin-right: 50px;
 }
 
 .header__menu-item-link {
@@ -48,7 +61,139 @@ html, body {
   color: white;
 }
 
-.header__menu-item-link:hover, .header__menu-item-link:active {
-  text-decoration: underline;
+@media only screen and (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+  }
+  .header__logo {
+    font-size: 28px;
+    color: white;
+    padding-right: 550px;
+    padding-top: 25px;
+  }
+  .header__container {
+    color: white;
+    padding-top: 10px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    background-color: black;
+    width: 100%;
+  }
+  .header__logo {
+    font-size: 28px;
+    color: white;
+    padding-right: 550px;
+    padding-top: 25px;
+  }
+  .header__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    padding-top: 10px;
+  }
+}
+
+html, body {
+  margin: 0;
+  font-family: "AvenirRegular", sans-serif;
+  line-height: 1.8rem;
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.hero {
+  height: 57.1875vw;
+  width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  height: 180px;
+  background-image: url("../assets/img/hero-image.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.hero__band-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  color: white;
+  padding-top: 40px;
+  padding-left: 16px;
+}
+
+.biography {
+  width: 100%;
+  height: 57.1875vw;
+}
+
+.biography__about {
+  font-size: 16px;
+  font-family: 'AvenirBold';
+  padding-left: 16px;
+}
+
+.biography__image {
+  width: 288px;
+  height: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+  background-image: url("../assets/img/joel-amissa-wtZCSfqhWAs-unsplash.jpg");
+  background-size: cover;
+}
+
+.biography__quote {
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-right: 16px;
+  font-size: 11px;
+}
+
+.biography__title {
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-right: 16px;
+  font-size: 14px;
+}
+
+.biography__paragraph {
+  font-size: 10px;
+  font-family: 'AvenirRegular';
+  margin-left: 16px;
+  margin-top: 24px;
+  margin-right: 16px;
+  margin-bottom: 40px;
+}
+
+.photo__title {
+  width: 100%;
+  height: 57.1875vw;
+  margin-left: 16px;
+  margin-top: 32px;
+}
+
+.photo__title__gallery {
+  display: block;
+}
+
+.photo__title__individual {
+  width: 288px;
+  height: 100%;
 }
 /*# sourceMappingURL=style.css.map */
