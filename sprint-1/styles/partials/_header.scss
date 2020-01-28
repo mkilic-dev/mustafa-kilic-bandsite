@@ -16,20 +16,20 @@ html, body {
   &__logo {
     font-size: 28px;
     color: white;
-    padding-top: 15px;
+    padding-top: 14px;
     position: fixed;
-    
+    padding-right: 20px;
   }
   &__container {
     display: flex;
     color: white;
-    padding-top: 35px;
-    margin-right: 10px;
+    padding-top: 30px;
+    margin-right: 30px;
     position: relative;
   }
   &__menu-item {
     list-style: none;
-    margin-right: 50px;    
+    margin-right: 60px;    
 }
 
   &__menu-item-link {
@@ -76,7 +76,7 @@ html, body {
       display: flex;
       color: white;
       padding-top: 10px;
-      
     }
+
   }
 }
