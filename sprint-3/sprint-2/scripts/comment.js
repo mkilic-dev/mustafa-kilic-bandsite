@@ -48,12 +48,15 @@ commentForm.addEventListener("submit", event => {
 
 const renderComments = (comments) => {
   console.log(comments);
+  const sortedComments = comments.sort((commentOne, commentTwo) => {
+    return commentTwo.timestamp - commentOne.timestamp;
+});
   const commentList = document.querySelector(".comment-list");
   //clear comments
   commentList.innerHTML = "";
   // add comments
-  for (let i = 0; i < comments.length; i++) {
-    const comment = comments[i];
+  for (let i = 0; i < sortedComments.length; i++) {
+    const comment = sortedComments[i];
     const newComment = document.createElement("li");
     newComment.innerHTML =
       '<div class="comment">' +
@@ -74,11 +77,9 @@ const renderComments = (comments) => {
   }
 }
 
-comments.sort(function(a, b) {
-  var c = new Date(a.date);
-  var d = new Date(b.date);
-  return c-d;
-});
+
+
+console.log(comments);
 
 
 // renderComments(comments);
